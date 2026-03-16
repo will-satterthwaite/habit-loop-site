@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Habit Loop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero">Habit Loop Lab</a>
+        <nav class="progress-nav" aria-label="Section navigation">
+          <a href="#hero" class="progress-link is-active">1</a>
+          <a href="#habit-definition" class="progress-link">2</a>
+          <a href="#habit-loop" class="progress-link">3</a>
+          <a href="#examples" class="progress-link">4</a>
+          <a href="#activity" class="progress-link">5</a>
+          <a href="#reflection" class="progress-link">6</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="screen hero-screen" id="hero" data-screen="1">
+          <div class="hero-copy">
+            <p class="eyebrow">A simple guide to everyday behavior</p>
+            <h1>The Habit Loop: Understanding How Habits Form</h1>
+            <p class="subtitle">
+              Why do we automatically do certain things every day?
+            </p>
+            <p class="lead">
+              Habits shape the way we use our phones, study, sleep, exercise,
+              and move through daily life. Once a pattern gets repeated enough,
+              it can start to feel automatic.
+            </p>
+            <button class="primary-btn" data-scroll-target="#habit-definition">
+              Start Learning
+            </button>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="loop-orbit orbit-one"></div>
+            <div class="loop-orbit orbit-two"></div>
+            <div class="loop-orbit orbit-three"></div>
+            <div class="habit-icons">
+              <article class="habit-chip">
+                <span class="icon-wrap">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
+                    <line x1="10" y1="5.5" x2="14" y2="5.5"></line>
+                    <line x1="11" y1="18.5" x2="13" y2="18.5"></line>
+                  </svg>
+                </span>
+                <span>Phone</span>
+              </article>
+              <article class="habit-chip">
+                <span class="icon-wrap">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M4 5.5h10a2 2 0 0 1 2 2v11H6a2 2 0 0 1-2-2z"></path>
+                    <path d="M16 7.5h2a2 2 0 0 1 2 2v9H8"></path>
+                    <line x1="8" y1="10" x2="12.5" y2="10"></line>
+                  </svg>
+                </span>
+                <span>Studying</span>
+              </article>
+              <article class="habit-chip">
+                <span class="icon-wrap">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M7 4.5h10v6a5 5 0 0 1-10 0z"></path>
+                    <path d="M9 18.5h6"></path>
+                    <path d="M12 15.5v3"></path>
+                  </svg>
+                </span>
+                <span>Sleep</span>
+              </article>
+              <article class="habit-chip">
+                <span class="icon-wrap">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <circle cx="8" cy="5.5" r="2"></circle>
+                    <path d="M8 8.5l3 3 2-1.5 3 2.5"></path>
+                    <path d="M11 11.5l-2.5 3.5-3 1"></path>
+                    <path d="M13 12.5l3 6"></path>
+                  </svg>
+                </span>
+                <span>Exercise</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="habit-definition" data-screen="2">
+          <div class="section-heading">
+            <p class="eyebrow">Screen 2</p>
+            <h2>What Is a Habit?</h2>
+          </div>
+
+          <div class="two-column">
+            <div class="info-card large">
+              <p>
+                A habit is a behavior that becomes automatic through repetition.
+              </p>
+              <p>
+                The brain forms habits to save effort and make actions easier,
+                so repeated behaviors can start happening with very little
+                thought.
+              </p>
+            </div>
+
+            <div class="illustration-card">
+              <div class="repeat-flow" aria-hidden="true">
+                <div class="mini-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
+                    <line x1="10" y1="5.5" x2="14" y2="5.5"></line>
+                  </svg>
+                </div>
+                <div class="mini-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M8 3.5h8l2 4H6z"></path>
+                    <path d="M7 7.5h10l-1.5 11H8.5z"></path>
+                  </svg>
+                </div>
+                <div class="mini-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M4 5.5h10a2 2 0 0 1 2 2v11H6a2 2 0 0 1-2-2z"></path>
+                    <path d="M16 7.5h2a2 2 0 0 1 2 2v9H8"></path>
+                  </svg>
+                </div>
+                <div class="mini-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M6 4.5h12v15H6z"></path>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="9" y1="12" x2="15" y2="12"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="arrow-row" aria-hidden="true">
+                <span>Repeated action</span>
+                <span class="arrow">→</span>
+                <span>Automatic behavior</span>
+              </div>
+              <div class="habit-tags">
+                <span>Checking phone</span>
+                <span>Brushing teeth</span>
+                <span>Snacking</span>
+                <span>Studying</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen loop-screen" id="habit-loop" data-screen="3">
+          <div class="section-heading">
+            <p class="eyebrow">Screen 3</p>
+            <h2>The Habit Loop</h2>
+          </div>
+
+          <div class="loop-layout">
+            <div class="loop-diagram" aria-label="Habit loop diagram">
+              <button class="loop-node cue is-selected" data-loop="cue">
+                <span class="node-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M12 4.5a5 5 0 0 1 5 5v3l2 3H5l2-3v-3a5 5 0 0 1 5-5z"></path>
+                    <path d="M10 18.5a2 2 0 0 0 4 0"></path>
+                  </svg>
+                </span>
+                <span>Cue</span>
+              </button>
+              <button class="loop-node routine" data-loop="routine">
+                <span class="node-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <circle cx="12" cy="6" r="2"></circle>
+                    <path d="M12 8.5l3 3 3-1"></path>
+                    <path d="M12 9l-2 4-3 1.5"></path>
+                    <path d="M13 13.5l2 5"></path>
+                  </svg>
+                </span>
+                <span>Routine</span>
+              </button>
+              <button class="loop-node reward" data-loop="reward">
+                <span class="node-icon">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M12 3.5l2.6 5.2 5.7.8-4.1 4 1 5.7-5.2-2.7-5.2 2.7 1-5.7-4.1-4 5.7-.8z"></path>
+                  </svg>
+                </span>
+                <span>Reward</span>
+              </button>
+              <div class="loop-center">Cue → Routine → Reward</div>
+            </div>
+
+            <div class="info-card detail-card">
+              <p class="detail-label" id="loop-label">Cue</p>
+              <h3 id="loop-title">A cue starts the loop.</h3>
+              <p id="loop-copy">
+                A cue is the trigger that tells your brain to begin a behavior.
+                It can be a sound, feeling, place, time, or situation.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="examples" data-screen="4">
+          <div class="section-heading">
+            <p class="eyebrow">Screen 4</p>
+            <h2>Habits in Everyday Life</h2>
+          </div>
+
+          <div class="example-grid">
+            <article class="example-card">
+              <h3>Phone Check</h3>
+              <div class="example-row">
+                <span class="chip-label">Cue</span>
+                <p>Phone notification</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Routine</span>
+                <p>Checking social media</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Reward</span>
+                <p>Entertainment</p>
+              </div>
+            </article>
+
+            <article class="example-card">
+              <h3>Study Snack</h3>
+              <div class="example-row">
+                <span class="chip-label">Cue</span>
+                <p>Feeling tired while studying</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Routine</span>
+                <p>Grabbing a snack</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Reward</span>
+                <p>Quick energy</p>
+              </div>
+            </article>
+
+            <article class="example-card">
+              <h3>After Class Gym</h3>
+              <div class="example-row">
+                <span class="chip-label">Cue</span>
+                <p>Finishing class</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Routine</span>
+                <p>Going to the gym</p>
+              </div>
+              <div class="example-row">
+                <span class="chip-label">Reward</span>
+                <p>Feeling productive</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="activity" data-screen="5">
+          <div class="section-heading">
+            <p class="eyebrow">Screen 5</p>
+            <h2>Identify the Habit Loop</h2>
+          </div>
+
+          <div class="activity-shell">
+            <div class="info-card activity-intro">
+              <p class="scenario-label">Scenario</p>
+              <h3>You hear a phone notification while studying.</h3>
+              <p>
+                Match each part of the habit loop by picking the best answer
+                for Cue, Routine, and Reward.
+              </p>
+            </div>
+
+            <div class="quiz-grid">
+              <div class="quiz-group" data-question="cue">
+                <h3>Cue</h3>
+                <button class="option-btn" data-value="notification sound">
+                  Notification sound
+                </button>
+                <button class="option-btn" data-value="checking phone">
+                  Checking phone
+                </button>
+                <button class="option-btn" data-value="entertainment">
+                  Entertainment
+                </button>
+              </div>
+
+              <div class="quiz-group" data-question="routine">
+                <h3>Routine</h3>
+                <button class="option-btn" data-value="notification sound">
+                  Notification sound
+                </button>
+                <button class="option-btn" data-value="checking phone">
+                  Checking phone
+                </button>
+                <button class="option-btn" data-value="entertainment">
+                  Entertainment
+                </button>
+              </div>
+
+              <div class="quiz-group" data-question="reward">
+                <h3>Reward</h3>
+                <button class="option-btn" data-value="notification sound">
+                  Notification sound
+                </button>
+                <button class="option-btn" data-value="checking phone">
+                  Checking phone
+                </button>
+                <button class="option-btn" data-value="entertainment">
+                  Distraction / entertainment
+                </button>
+              </div>
+            </div>
+
+            <div class="activity-actions">
+              <button class="primary-btn" id="check-answers">Check Answers</button>
+              <button class="ghost-btn" id="reset-answers">Reset</button>
+            </div>
+
+            <div class="feedback-card" id="activity-feedback" aria-live="polite">
+              Select one answer for each part of the loop, then check your
+              response.
+            </div>
+          </div>
+        </section>
+
+        <section class="screen reflection-screen" id="reflection" data-screen="6">
+          <div class="section-heading">
+            <p class="eyebrow">Screen 6</p>
+            <h2>Think About Your Own Habits</h2>
+          </div>
+
+          <div class="reflection-layout">
+            <form class="reflection-form">
+              <label>
+                What is one habit you do every day?
+                <input
+                  type="text"
+                  id="habit-input"
+                  placeholder="Example: checking my phone after waking up"
+                />
+              </label>
+              <label>
+                What might be the cue?
+                <input
+                  type="text"
+                  id="cue-input"
+                  placeholder="Example: hearing my alarm"
+                />
+              </label>
+              <label>
+                What is the routine?
+                <input
+                  type="text"
+                  id="routine-input"
+                  placeholder="Example: opening social apps"
+                />
+              </label>
+              <label>
+                What reward might reinforce it?
+                <input
+                  type="text"
+                  id="reward-input"
+                  placeholder="Example: feeling entertained or connected"
+                />
+              </label>
+            </form>
+
+            <aside class="reflection-preview">
+              <p class="detail-label">Your habit loop</p>
+              <div class="preview-block">
+                <strong>Habit</strong>
+                <p id="preview-habit">Choose a daily habit to explore.</p>
+              </div>
+              <div class="preview-block">
+                <strong>Cue</strong>
+                <p id="preview-cue">What triggers it?</p>
+              </div>
+              <div class="preview-block">
+                <strong>Routine</strong>
+                <p id="preview-routine">What action follows?</p>
+              </div>
+              <div class="preview-block">
+                <strong>Reward</strong>
+                <p id="preview-reward">What makes the behavior worth repeating?</p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="closing-note">
+            Understanding the habit loop can help you become more aware of your
+            daily behaviors and how small actions turn into long-term habits.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
