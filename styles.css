@@ -222,7 +222,9 @@ input {
 .activity-shell,
 .feedback-card,
 .reflection-preview,
-.closing-note {
+.closing-note,
+.summary-card,
+.summary-banner {
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.75);
   box-shadow: var(--shadow);
@@ -232,7 +234,9 @@ input {
 .habit-chip,
 .example-card,
 .feedback-card,
-.closing-note {
+.closing-note,
+.summary-card,
+.summary-banner {
   border-radius: var(--radius-md);
 }
 
@@ -516,6 +520,67 @@ svg {
   padding-bottom: 80px;
 }
 
+.summary-screen {
+  padding-bottom: 96px;
+}
+
+.summary-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.summary-card,
+.summary-banner {
+  padding: 28px;
+}
+
+.summary-main h3 {
+  margin: 0 0 14px;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  line-height: 1.08;
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.03em;
+}
+
+.summary-main p,
+.summary-point p,
+.summary-banner {
+  font-size: 1.03rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.summary-points {
+  display: grid;
+  gap: 18px;
+}
+
+.summary-point {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-point:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.summary-point strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.summary-point p {
+  margin: 0;
+}
+
+.summary-banner {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
 .reflection-form {
   display: grid;
   gap: 16px;
@@ -566,6 +631,7 @@ svg {
   .two-column,
   .loop-layout,
   .reflection-layout,
+  .summary-layout,
   .example-grid,
   .quiz-grid {
     grid-template-columns: 1fr;
